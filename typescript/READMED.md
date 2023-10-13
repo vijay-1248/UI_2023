@@ -12,8 +12,10 @@ Introduction to typescript
     - light weight
     - it is used to build large scale application.
 
-#note : 
-    - browser can't understand typescript
-    - Typescript is translated in javascript
+**note : **
+    - browser can't understand typescript.
+    - typescript is translated in javascript.
 
 # Typescript 
+
+
