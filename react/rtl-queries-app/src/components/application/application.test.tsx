@@ -1,11 +1,15 @@
 import exp from 'constants';
 import {Application} from './application';
-import {render , screen } from '@testing-library/react';
+import {getByText, render , screen } from '@testing-library/react';
 
 describe("Application test",() => {
     test('render correctly',() => {
         render(<Application />);
 
+        //getByText
+        const paragraphElement = screen.getByText('All fields are mandatory');
+        expect(paragraphElement).toBeInTheDocument();
+        
         //getByPlaceholderText
         const placeHolderElement = screen.getByPlaceholderText('Fullname');
         expect(placeHolderElement).toBeInTheDocument();
