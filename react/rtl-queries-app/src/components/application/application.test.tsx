@@ -6,10 +6,14 @@ describe("Application test",() => {
     test('render correctly',() => {
         render(<Application />);
 
+        //getByAltText
+        const altValue = screen.getByAltText('flower');
+        expect(altValue).toBeInTheDocument();
+        
         //getDisplayValue
         const inputDisplayValue = screen.getByDisplayValue('vijaya sekhar');
         expect(inputDisplayValue).toBeInTheDocument();
-        
+
         //getByText
         const paragraphElement = screen.getByText('All fields are mandatory');
         expect(paragraphElement).toBeInTheDocument();

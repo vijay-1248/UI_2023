@@ -4,6 +4,7 @@ export const Application = () => {
             <h1>Job application form</h1>
             <h2>Section 1</h2>
             <p>All fields are mandatory</p>
+            <img src='https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/27thDec/pink-comboa-600x600.JPG' alt='flower'/>
             <form>
             <div>
                 <label htmlFor="name">Name</label>
