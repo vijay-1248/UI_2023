@@ -6,6 +6,8 @@ export const Application = () => {
             <p>All fields are mandatory</p>
             <img src='https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/27thDec/pink-comboa-600x600.JPG' alt='flower'/>
             <span title='close'>X</span>
+
+            <div data-testid='custom-element'>Custom HTML element !</div>
             
             <form>
             <div>

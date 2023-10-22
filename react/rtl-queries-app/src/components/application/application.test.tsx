@@ -6,10 +6,14 @@ describe("Application test",() => {
     test('render correctly',() => {
         render(<Application />);
 
+        //getByTestId
+        const testIdValue = screen.getByTestId('custom-element');
+        expect(testIdValue).toBeInTheDocument();
+        
         //getByTitle
         const titleValue = screen.getByTitle('close');
         expect(titleValue).toBeInTheDocument();
-        
+
         //getByAltText
         const altValue = screen.getByAltText('flower');
         expect(altValue).toBeInTheDocument();
