@@ -6,6 +6,10 @@ describe("Application test",() => {
     test('render correctly',() => {
         render(<Application />);
 
+        //getByPlaceholderText
+        const placeHolderElement = screen.getByPlaceholderText('Fullname');
+        expect(placeHolderElement).toBeInTheDocument();
+
         // handling multiple same lable text 
         const nameElement2 = screen.getByLabelText('Name',{
             selector : 'input'
