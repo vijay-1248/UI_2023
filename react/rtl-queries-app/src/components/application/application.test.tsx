@@ -6,10 +6,14 @@ describe("Application test",() => {
     test('render correctly',() => {
         render(<Application />);
 
+        //getByTitle
+        const titleValue = screen.getByTitle('close');
+        expect(titleValue).toBeInTheDocument();
+        
         //getByAltText
         const altValue = screen.getByAltText('flower');
         expect(altValue).toBeInTheDocument();
-        
+
         //getDisplayValue
         const inputDisplayValue = screen.getByDisplayValue('vijaya sekhar');
         expect(inputDisplayValue).toBeInTheDocument();
